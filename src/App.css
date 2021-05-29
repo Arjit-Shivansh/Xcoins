@@ -1,0 +1,318 @@
+@font-face {
+  font-family: CircularStd-Medium;
+  src: url(./fonts/Circular-Std-Font/Circular\ Std\ Medium.ttf);
+}
+
+@font-face {
+  font-family: CircularStd-Bold;
+  src: url(./fonts/Circular-Std-Font/Circular\ Std\ Bold.ttf);
+}
+
+@font-face {
+  font-family: AkkuratPro-Regular;
+  src: url(./fonts/AkkuratPro/AkkuratPro-Regular.otf);
+}
+
+@font-face {
+  font-family: AkkuratPro-Bold;
+  src: url(./fonts/AkkuratPro/AkkuratPro-Bold.otf);
+}
+
+:root {
+  --blue-grey: #637696;
+  --squash: #e6b413;
+  --green-blue: #00b178;
+  --denim-blue-30: rgba(60, 90, 154, 0.3);
+  --scarlet: #d0021b;
+  --dark-lime-green: #86c306;
+  --cerulean: #009cde;
+  --nice-blue-7: rgba(23, 115, 166, 0.07);
+  --dark-grey-blue: #3a4e6f;
+  --cerulean-30: rgba(0, 156, 222, 0.3);
+  --golden-yellow: #f8c41c;
+  --cerulean-05: rgba(0, 156, 222, 0.05);
+  --cerulean-15: rgba(0, 156, 222, 0.15);
+  --golden-yellow-10: rgba(255, 223, 0, 0.1);
+}
+
+.container,
+.container-md,
+.container-sm,
+.container-xs,
+.container-lg {
+  margin: 0 auto;
+  width: 1680px;
+}
+
+.create-account-box {
+  width: 553px;
+  margin: 191px auto 0 auto;
+  font-family: CircularStd-Bold;
+}
+
+.create-account-title {
+  font-size: 48px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 64px;
+  letter-spacing: normal;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+
+.setup-step-box {
+  display: flex;
+  flex-direction: row;
+  margin: 0 1px 0 22px;
+}
+.account-setup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.oval {
+  height: 64px;
+  width: 64px;
+  margin: 0 0 13px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  font-family: CircularStd-Medium;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: var(--blue-grey);
+  background-color: var(--cerulean-05);
+}
+
+.step-flow-line:last-child {
+  margin: 32px 35px 70px 11px;
+}
+.step-flow-line {
+  height: 1px;
+  width: 60px;
+  opacity: 0.2;
+  background-color: var(--blue-grey);
+}
+.mr-st-fl-li1 {
+  margin: 32px 9px 70px 15px;
+}
+.mr-st-fl-li2 {
+  margin: 32px 35px 70px 11px;
+}
+.oval-label {
+  font-size: 16px;
+  font-family: CircularStd-Medium;
+  text-align: center;
+  line-height: 26px;
+  font-weight: 500;
+  color: var(--blue-grey);
+  opacity: 0.5;
+}
+.active-label {
+  opacity: 1;
+  color: #000000;
+}
+.active-oval {
+  color: #ffffff;
+  box-shadow: 0 2px 4px 0 var(--cerulean-30);
+  background-color: var(--cerulean);
+  opacity: 1;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+.reminder-box {
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 53px 0 30px;
+  border-radius: 7px;
+  background-color: var(--golden-yellow-10);
+}
+.rm-pd1 {
+  padding: 0 91px 0 15px;
+}
+.rm-pd2 {
+  padding: 0 32px 0 15px;
+}
+.clock-box {
+  margin: 15px 0 11px 0;
+  object-fit: contain;
+}
+.clock-box img {
+  height: 18px;
+  width: 18px;
+}
+.clock-text {
+  margin: 0 0 0 15px;
+  font-family: AkkuratPro-Bold;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: var(--squash);
+}
+/* -------------------------------------------------------------------------------- */
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+}
+.form-box form .form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form-box form .form-control label {
+  line-height: 26px;
+  font-size: 16px;
+  font-family: AkkuratPro-Regular;
+  opacity: 0.5;
+  letter-spacing: normal;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: normal;
+  color: var(--blue-grey);
+}
+.form-box form .form-control label::after {
+  content: "*";
+}
+.form-box form .form-control input {
+  margin: 5px 0 0 0;
+  font-size: 18px;
+  font-family: AkkuratPro-Regular;
+  line-height: 32px;
+  border-radius: 10px;
+  padding: 6px 20px 12px 20px;
+  background-color: var(--cerulean-05);
+  border: none;
+  outline: none;
+  color: var(--blue-grey);
+}
+.form-box form .form-control input::placeholder {
+  opacity: 0.4;
+}
+.form-box form .form-control input:focus {
+  border: solid 1px var(--cerulean-30);
+  box-shadow: 0 0 15px 0px rgba(0, 156, 222, 0.2);
+  background-color: #ffffff;
+}
+
+.form-box form .checkbox-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.form-box form .checkbox-control input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  background-color: var(--cerulean-15);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 10px 53px 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.form-box form .checkbox-control label {
+  width: 489px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: normal;
+  color: var(--blue-grey);
+  font-family: AkkuratPro-Regular;
+}
+
+.form-box form .checkbox-control label::after {
+  content: "";
+}
+/* -------------------------------------------------------------------------------- */
+
+.form-button {
+  width: 100%;
+  margin-bottom: 16px;
+  margin-top: 40px;
+}
+.form-button > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  border-radius: 32px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  font-family: AkkuratPro-Bold;
+  letter-spacing: 1px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.button-icon {
+  margin-right: 10px;
+}
+
+.error-box {
+  font-size: 14px;
+  color: red;
+  margin: 5px 0px 0px 10px;
+  height: 14px;
+}
+
+
+.form-box .form{
+  align-items: center;
+  justify-content: center;
+}
+
+.form-box form .star{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+.form-box form .star label::after {
+  content: "";
+}
+
+.form-box form .star .input-box{
+  display: flex;
+  flex-direction: row;
+}
+
+.form-box form .star .input-box input{
+  width: 21px;
+  height: 32px;
+  margin: 15px 20px 0 0;
+  padding: 31px 21px 37px 21px;
+  font-size: 36px;
+}
+.form-box form .star .input-box input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+.modify-3{
+  margin-top: 43px;
+}
